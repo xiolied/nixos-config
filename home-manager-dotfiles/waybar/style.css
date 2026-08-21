@@ -1,0 +1,102 @@
+@define-color bg #1b1814;
+@define-color fg #b4ae9e;
+@define-color empty #6c6c6c;
+@define-color icon #70a6ea;
+@define-color sep #737373;
+@define-color hover #f2f2f2;
+@define-color critical #f38ba8;
+@define-color charging #26a65b;
+@define-color warning #f9e2af;
+@define-color connected #a6e3a1;
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 0px;
+}
+
+window#waybar {
+  background: @bg;
+  color: @fg;
+  padding: 2px;
+}
+
+#window {
+  background: @bg;
+  color: @fg;
+  padding: 0 0 0 10px;
+}
+
+tooltip {
+  background: @bg;
+  color: @fg;
+  border: 2px solid @fg;
+}
+
+#workspaces button {
+  background: transparent;
+  color: @fg;
+  padding: 0px 10px;
+}
+
+#workspaces button.empty {
+  color: @empty;
+}
+
+#workspaces button.focused {
+  background: @bg;
+  color: @fg;
+}
+
+#custom-os-icon {
+  color: @fg;
+  font-size: 20px;
+  margin: 0px 12px 0px 14px;
+  padding: 1px 0px;
+}
+
+#custom-sep {
+  color: @sep;
+  font-size: 12px;
+  margin: 0 4px;
+}
+
+#clock,
+#custom-warp,
+#memory,
+#bluetooth,
+#network,
+#bluetooth.connected,
+#custom-warp.connecteded,
+#battery {
+  padding: 0px 5px;
+  margin: 3px 6px;
+}
+
+#clock:hover,
+#custom-warp:hover,
+#tray:hover,
+#memory:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover {
+  color: @hover;
+  box-shadow: inherit;
+}
+
+#memory.critical,
+#network.disconnected,
+#custom-warp.disconnected,
+#bluetooth.disabled,
+#bluetooth.off {
+  color: @critical;
+  padding: 0px 5px;
+  margin: 3px 6px;
+}
+
+#battery.charging {
+  color: @charging;
+}
