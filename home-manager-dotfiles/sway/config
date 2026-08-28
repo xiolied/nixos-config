@@ -6,7 +6,7 @@
   set $term foot
   set $menu rofi -show drun
   set $sbar waybar
-  output * bg ~/Wallpapers/aes-off-white.png fill
+  #output * bg ~/Wallpapers/aes-off-white.png fill
 
   exec /run/current-system/swall-set/libexec/policykit-1-pantheon/pantheon-polkit-agent
   exec waybar & dunst & swayosd-server
