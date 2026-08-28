@@ -1,0 +1,47 @@
+/* SwayOSD Dark Theme */
+/* Place at: ~/.config/swayosd/style.css */
+
+window#osd {
+  background: transparent;
+}
+
+box#container {
+  background-color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  border-radius: 12px;
+  padding: 16px 24px;
+  min-width: 280px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Icon */
+image {
+  color: #ddcbc6;
+  -gtk-icon-size: 32px;
+  margin-right: 12px;
+}
+
+/* Progress bar track */
+progressbar {
+  min-height: 6px;
+}
+
+progressbar trough {
+  background-color: #2e2e2e;
+  border-radius: 4px;
+  min-height: 6px;
+}
+
+/* Progress bar fill */
+progressbar progress {
+  background-color: #ddcbc6;
+  border-radius: 4px;
+  min-height: 6px;
+}
+
+/* Label / percentage text */
+label {
+  color: #ddcbc6;
+  font-size: 13px;
+  font-weight: 500;
+}
