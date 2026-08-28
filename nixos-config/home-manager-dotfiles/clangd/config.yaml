@@ -1,6 +1,0 @@
-CompileFlags:
-  Add:
-    - "-isystem/run/current-system/sw/include"
-Diagnostics:
-  UnusedIncludes: None
-  MissingIncludes: None
